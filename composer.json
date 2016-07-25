@@ -19,6 +19,6 @@
     "minimum-stability": "dev",
     "require": {
         "Illuminate/Support": "~5",
-		"saguajardo/datatable": "dev-master"
+	"saguajardo/datatable": "dev-master"
     }
 }
