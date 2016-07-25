@@ -13,7 +13,7 @@
             "Saguajardo\\BootstrapMenu\\": "src/"
         },
         "files": [
-            "src/helpers.php",
+            "src/helpers.php"
         ]
     },
     "minimum-stability": "dev",
