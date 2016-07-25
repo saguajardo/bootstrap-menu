@@ -1,0 +1,24 @@
+{
+    "name": "saguajardo/bootstrap-menu",
+    "description": "Menu bootstrap3 para laravel 5 con acceso a base de datos",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Ariel Guajardo",
+            "email": "guajardosebas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Saguajardo\\BootstrapMenu\\": "src/"
+        },
+        "files": [
+            "src/helpers.php",
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "Illuminate/Support": "~5",
+		"saguajardo/datatable": "dev-master"
+    }
+}
