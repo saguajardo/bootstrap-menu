@@ -14,3 +14,17 @@ Publicar el archivo de configuración y las migraciones
 
 php artisan vendor:publish --provider="Saguajardo\BootstrapMenu\BootstrapMenuServiceProvider"
 
+Agregar el siguiente método en el archivo vendor\laravel\framework\src\Illuminate\Foundation\Auth\User.php
+
+use Saguajardo\BootstrapMenu\Traits\HasRoleAndPermission;
+use Saguajardo\BootstrapMenu\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
+
+class User extends Model implements
+    AuthenticatableContract,
+    HasRoleAndPermissionContract, // <----
+    CanResetPasswordContract
+{
+    use Authenticatable, HasRoleAndPermission, CanResetPassword;
+}
+
+
