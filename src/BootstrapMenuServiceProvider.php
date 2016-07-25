@@ -86,6 +86,10 @@ class BootstrapMenuServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/migrations/' => base_path('/database/migrations')
         ], 'migrations');
+        
+        $this->publishes([
+            __DIR__ . '/seeds/' => base_path('/database/seeds')
+        ], 'seeds');
 
         $this->registerBladeExtensions();
     }
